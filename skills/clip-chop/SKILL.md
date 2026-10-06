@@ -18,6 +18,7 @@ Extracts standalone incidents from compilation videos and restores their true na
    - Automatically determines the tightest bounding box across all checkpoints, guaranteeing zero blurred background leakage at any second.
    - Preserves pure native dimensions (e.g., vertical clips export as vertical, square clips as square, 16:9 as 16:9).
 4. **Hardware-Accelerated Encoding**: Automatically selects `h264_videotoolbox` (Apple Silicon), `h264_nvenc` (NVIDIA), or `libx264`.
+5. **Clean-Slate Auto Wipe**: Luôn tự động xóa sạch thư mục output cũ trước khi chạy/test lại, không để sót clip rác từ lần chạy trước.
 
 ## Usage
 

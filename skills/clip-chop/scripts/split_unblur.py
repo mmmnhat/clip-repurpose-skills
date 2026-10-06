@@ -165,6 +165,8 @@ def get_geometric_inliers(f1, f2):
     return int(np.sum(h_mask)) if h_mask is not None else 0
 
 def split_and_unblur(video_path, out_dir="output_chop", limit=None):
+    if os.path.exists(out_dir):
+        shutil.rmtree(out_dir)
     os.makedirs(out_dir, exist_ok=True)
     actual_path = resolve_video_source(video_path)
 
