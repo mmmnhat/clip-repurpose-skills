@@ -1,0 +1,22 @@
+# Video & Media Artifacts
+*.mp4
+*.m4a
+*.wav
+*.aac
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Test & Pipeline Outputs
+output_chop/
+output_repurposed/
+raw_chops/
+source_download.*
+downloaded_input.*
+
+# Python Cache & OS
+__pycache__/
+*.pyc
+.DS_Store
+.system_generated/
